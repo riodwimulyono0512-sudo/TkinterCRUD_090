@@ -15,3 +15,7 @@ def create_db():
             prediksi_fakultas TEXT NOT NULL
         )  
     """)
+    conn.commit()
+    conn.close()
+
+create_db()
