@@ -32,3 +32,10 @@ def prediksi_fakultas(biologi, fisika, inggris):
 
 def submit_nilai():
     nama = entry_nama.get().strip()
+    try:
+        bio = int(entry_bio.get())
+        fis = int(entry_fis.get())
+        ing = int(entry_ing.get())
+    except ValueError:
+        messagebox.showerror("Error", "Nilai harus berupa angkal")
+        return
