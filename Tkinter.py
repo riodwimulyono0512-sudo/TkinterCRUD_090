@@ -29,3 +29,6 @@ def prediksi_fakultas(biologi, fisika, inggris):
         return "Bahasa"
     else:
         return "Tidak Dapat Ditentukan"
+
+def submit_nilai():
+    nama = entry_nama.get().strip()
